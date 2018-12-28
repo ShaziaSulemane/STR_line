@@ -1,4 +1,4 @@
-package LabWork2;
+
 public class Cylinder_2 implements Cylinder {
     Hardware hardware;
 
@@ -30,8 +30,8 @@ public class Cylinder_2 implements Cylinder {
     public void stop() {
         hardware.enterCriticalArea();
         int v = hardware.SafeReadPort(2);
-        v = hardware.setBitValue(v, 1, false);
-        v = hardware.setBitValue(v, 0, false);
+        v = hardware.setBitValue(v, 3, false);
+        v = hardware.setBitValue(v, 4, false);
         hardware.SafeWritePort(2, v);
         hardware.leaveCriticalArea();
     }
@@ -51,7 +51,7 @@ public class Cylinder_2 implements Cylinder {
             try {
                 Thread.sleep(1);
             }catch(InterruptedException e){
-                System.out.println("exception thrown: "+e);
+                e.printStackTrace();
             }
         }
         stop();

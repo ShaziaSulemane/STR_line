@@ -1,10 +1,10 @@
 import java.util.concurrent.*;
-package LabWork2;
+
 public class Hardware {
 
     static     {
         // C:\Users\Shazia\source\repos\Hardware\x64\Debug\Hardware.dll
-        System.load("C:\\Users\\Shazia\\source\\repos\\Hardware\\x64\\Debug\\Hardware.dll");
+        System.load("C:\\str2018\\Projects\\Hardware\\x64\\Debug\\Hardware.dll");
     }
 
     public int setBitValue(int var, int bit_n, boolean value) {

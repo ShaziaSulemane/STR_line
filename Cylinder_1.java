@@ -1,4 +1,4 @@
-package LabWork2;
+
 public class Cylinder_1 implements Cylinder{
     Hardware hardware;
 
@@ -51,7 +51,7 @@ public class Cylinder_1 implements Cylinder{
             try {
                 Thread.sleep(1);
             }catch(InterruptedException e){
-                System.out.println("exception thrown: "+e);
+                e.printStackTrace();
             }
         }
         stop();

@@ -1,4 +1,4 @@
-package LabWork2;
+
 
 public class Cylinder_3 implements Cylinder{
     Hardware hardware;
@@ -31,8 +31,8 @@ public class Cylinder_3 implements Cylinder{
     public void stop() {
         hardware.enterCriticalArea();
         int v = hardware.SafeReadPort(2);
-        v = hardware.setBitValue(v, 1, false);
-        v = hardware.setBitValue(v, 0, false);
+        v = hardware.setBitValue(v, 5, false);
+        v = hardware.setBitValue(v, 6, false);
         hardware.SafeWritePort(2, v);
         hardware.leaveCriticalArea();
     }

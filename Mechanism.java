@@ -1,4 +1,4 @@
-package LabWork2;
+
 
 public class Mechanism {
     Hardware hardware;
@@ -20,6 +20,14 @@ public class Mechanism {
         int x = hardware.SafeReadPort(2);
         x= hardware.setBitValue(x, 2 , true);
         hardware.SafeWritePort(2,x);
+        hardware.leaveCriticalArea();
+    }
+
+    public void StopConveyor(){
+        hardware.enterCriticalArea();
+        int x = hardware.SafeReadPort(2);
+        x = hardware.setBitValue(x, 2, false);
+        hardware.SafeWritePort(2, x);
         hardware.leaveCriticalArea();
     }
 
@@ -96,23 +104,42 @@ public class Mechanism {
     }
 
     public int identify() {
-        boolean Sensor1 = false;
-        boolean Sensor2 = false;
+        int nPatches=0;
+        boolean sens1=false;
+        boolean sens2=false;
         // account the number of patches, in bits P1.5 and P1.6
         // until bit P0.0 goes to 1
         // return 0,1, or 2
         // like this
-        int previous = hardware.SafeReadPort(1);
-        while(!hardware.getBitValue(hardware.SafeReadPort(0),0)) {
-            //account patches here
-            if(hardware.getBitValue(hardware.SafeReadPort(1),5) && !hardware.getBitValue(previous,5)) Sensor1=true;
-            if(hardware.getBitValue(hardware.SafeReadPort(1),6) && !hardware.getBitValue(previous,6)) Sensor2=true;
-            previous = hardware.SafeReadPort(1);
+        while(hardware.getBitValue(hardware.SafeReadPort(0),0)){
+            try{
+                Thread.sleep(1);
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
         }
-        if(Sensor2 && !Sensor1) return 1;
-        else if(Sensor2 && Sensor1) return 2;
-        else if(!Sensor1 && !Sensor2) return 0;
 
-        return -1;
+        while(!hardware.getBitValue(hardware.SafeReadPort(0),0)) {
+            if (hardware.getBitValue(hardware.SafeReadPort(1), 6)){
+                sens1 = true;
+            }
+            if (hardware.getBitValue(hardware.SafeReadPort(1),5)) {
+                sens2 = true;
+            }
+        }
+
+        if (sens1) {
+            if(sens2){
+                nPatches=2;
+            }else{
+                nPatches=1;
+            }
+        }else if (!sens2){
+            nPatches=0;
+        } else if (sens2){
+            nPatches=1;
+        }
+        ThreadIdentify.drainPermits();
+        return nPatches;
     }
 }

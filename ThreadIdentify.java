@@ -1,5 +1,5 @@
 import java.util.concurrent.*;
-package LabWork2;
+
 public class ThreadIdentify extends Thread{
 
     private Mechanism mechanism;
@@ -15,6 +15,10 @@ public class ThreadIdentify extends Thread{
         semaphore.release();
     }
 
+    public static void drainPermits () {
+        semaphore.drainPermits();
+    }
+
     public static Integer peekPart() {
         return (Integer)messageQueue.peek();
     }
@@ -28,7 +32,6 @@ public class ThreadIdentify extends Thread{
         return null;
     }
 
-
     public static Integer TryConsumeMessage() {
         synchronized (lock) {
             if (messageQueue.peek() != null) {
@@ -41,7 +44,6 @@ public class ThreadIdentify extends Thread{
             return null;
         }
     }
-
 
     public void run() {
         System.out.println("ThreadIdentify just started....");
