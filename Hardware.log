@@ -1,0 +1,82 @@
+﻿  interface.c
+c:\str2018\source\interface.c(200): warning C4142: 'create_DI_channel': benign redefinition of type
+  c:\str2018\include\interface.h(6): note: see declaration of 'create_DI_channel'
+c:\str2018\source\interface.c(220): warning C4142: 'create_DO_channel': benign redefinition of type
+  c:\str2018\include\interface.h(7): note: see declaration of 'create_DO_channel'
+c:\str2018\source\interface.c(301): warning C4142: 'close_channels': benign redefinition of type
+  c:\str2018\include\interface.h(10): note: see declaration of 'close_channels'
+  mongoose.c
+c:\str2018\source\mongoose.c(541): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(1144): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(1154): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(1426): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+c:\str2018\source\mongoose.c(1444): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+c:\str2018\source\mongoose.c(1616): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(2854): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(2907): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(3284): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(3315): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(3372): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(3849): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(5381): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(5615): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(5645): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6240): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6377): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6441): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6459): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6512): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6563): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6591): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6592): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(6974): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7046): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7172): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7172): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7328): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7778): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7872): warning C4244: 'function': conversion from 'sock_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(7929): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(8227): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(8236): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(8301): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(8340): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(8381): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(8883): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\str2018\source\mongoose.c(8991): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9006): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9012): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9070): warning C4267: 'function': conversion from 'size_t' to 'uint32_t', possible loss of data
+c:\str2018\source\mongoose.c(9343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9517): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9529): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9689): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9768): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9773): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9777): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9783): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9788): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9828): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9832): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9850): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9869): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(9883): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10194): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10211): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10221): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10237): warning C4244: '=': conversion from '__int64' to 'unsigned char', possible loss of data
+c:\str2018\source\mongoose.c(10250): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10295): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10330): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10433): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10482): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(10491): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(11493): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\str2018\source\mongoose.c(11561): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  sim_server.c
+  dllmain.cpp
+  Hardware.cpp
+c:\users\shazia\source\repos\hardware\hardware.cpp(33): warning C4244: 'argument': conversion from 'jint' to 'uInt8', possible loss of data
+  stdafx.cpp
+     Creating library C:\Users\Shazia\source\repos\Hardware\x64\Debug\Hardware.lib and object C:\Users\Shazia\source\repos\Hardware\x64\Debug\Hardware.exp
+  Hardware.vcxproj -> C:\Users\Shazia\source\repos\Hardware\x64\Debug\Hardware.dll
